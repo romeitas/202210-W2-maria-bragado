@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Geneva, Tahoma,
+        sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #d1bead;
+    --secondary: #5169a7;
+    --terciary: #d09d72;
+}
+
+header,
+footer {
+    /* display: flex; */
+    background-color: #5169a7;
+    color: black;
+}
+
+[header] {
+    display: flex;
+}
+
+[h1] {
+    font-size: x-large;
+}
+
+[#nav] {
+    display: flex;
+}
+
+nav:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    text-align: right;
+    flex-direction: row;
+}
+
+/*Selector de atributo*/
+img [src='WEEK2/logo+.png'] {
+    display: block;
+}
+
+p {
+    text-align: right;
+}
+
+div {
+    background-color: #d09d72;
+    background-color: #d1bead;
+}
+
+main {
+    background-color: #d1bead;
+}
+
+section + article::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #5169a7;
+}
+
+section > ul {
+    content: '';
+    display: block;
+    color: blanchedalmond;
+    align-items: left;
+}
+section:nth-child(2n + 1) {
+    text: var(--gris);
+}
+
+article {
+    text-align: right;
+    font-size: xx-large;
+    height: 30vh;
+}
+
+.productos {
+    display: flex;
+}
+
+/*Selector de atributo*/
+img[src='./WEEK2/128px-Valid_CSS.svg.png'] {
+    display: block;
+    margin: 0 auto;
+}
