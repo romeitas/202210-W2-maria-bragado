@@ -30,8 +30,9 @@ h1 {
 
 /*Selector combinado de elementos*/
 nav,
-ul {
+p {
     display: flex;
+    justify-content: right;
     margin-left: 1rem;
 }
 
@@ -39,7 +40,7 @@ nav :nth-child(2) {
     font-weight: bold;
 }
 
-nav ul:hover {
+nav p:hover {
     cursor: pointer;
 }
 
@@ -82,6 +83,7 @@ article {
 footer div {
     display: flex;
     background-color: var(--secondary);
+    justify-content: center;
 }
 
 /*Selector de atributo*/
