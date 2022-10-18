@@ -12,6 +12,7 @@
     --secondary: #5169a7;
     --terciary: #d09d72;
     --cuaternary: black;
+    --hoverlist: #da5e00;
 }
 
 header {
@@ -60,23 +61,40 @@ main {
 
 main div {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     background-color: var(--primary);
     justify-content: space-between;
 }
 
-main div + article::before {
-    margin-top: 1.5rem;
-    content: '';
-    display: block;
-    border-bottom: 1px solid var(--secondary);
+/*Selector de ID*/
+[id='input1']::after {
+    content: ' ✖';
 }
 
-article {
-    align-items: right;
+[id='input2']::after {
+    content: ' ✖';
+}
+
+[id='input3']::after {
+    content: ' ✖';
+}
+
+main div label input[value='first_checkbox'] {
+    text-decoration: line-through;
+}
+
+main div:hover {
+    color: var(--hoverlist);
+    cursor: pointer;
+}
+
+main h2 {
+    font-size: x-large;
+    font-weight: normal;
     text-align: right;
-    font-size: xx-large;
-    height: 7rem;
+    border-top: 1.5px solid var(--secondary);
+    padding-top: 1rem;
+    padding-right: 1rem;
 }
 
 /* Selector combinado de elementos*/
