@@ -12,6 +12,7 @@
     --secondary: #5169a7;
     --terciary: #d09d72;
     --cuaternary: black;
+    --hoverlist: #da5e00;
 }
 
 header {
@@ -32,6 +33,7 @@ h1 {
 nav,
 p {
     display: flex;
+    justify-content: right;
     margin-left: 1rem;
 }
 
@@ -57,17 +59,43 @@ main {
     height: 30rem;
 }
 
-main div {
-    display: flex;
-    flex: 1;
-    background-color: var(--primary);
-    justify-content: space-between;
+h2 {
+    padding-top: 2rem;
 }
 
-main div h1 {
-    justify-content: left;
-    padding-top: 2rem;
-    font-size: x-large;
+form {
+    margin-top: 2.5rem;
+    margin-left: 0;
+}
+
+form label {
+    display: block;
+}
+
+input[type='text'] {
+    display: block;
+    width: 75%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--secondary);
+    background-color: var(--primary);
+    border-top: var(--primary);
+    border-left: var(--primary);
+    border-right: var(--primary);
+}
+
+form button {
+    background-color: var(--secondary);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: normal;
+    padding: 0.6rem;
+    margin-top: 1.2rem;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: var(--hoverlist);
 }
 
 /* Selector combinado de elementos*/
