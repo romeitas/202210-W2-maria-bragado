@@ -11,80 +11,77 @@
     --primary: #d1bead;
     --secondary: #5169a7;
     --terciary: #d09d72;
+    --cuaternary: black;
 }
 
-header,
-footer {
-    /* display: flex; */
-    background-color: #5169a7;
-    color: black;
-}
-
-[header] {
+header {
+    background-color: var(--secondary);
+    color: var(--cuaternary);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: small;
+    padding: 1rem;
 }
 
-[h1] {
-    font-size: x-large;
+h1 {
+    font-size: large;
 }
 
-[#nav] {
+/*Selector combinado de elementos*/
+nav,
+ul {
     display: flex;
+    margin-left: 1rem;
 }
 
-nav:hover {
+nav :nth-child(2) {
+    font-weight: bold;
+}
+
+nav ul:hover {
     cursor: pointer;
-    color: black;
-}
-
-.flex-container {
-    display: flex;
-    text-align: right;
-    flex-direction: row;
-}
-
-/*Selector de atributo*/
-img [src='WEEK2/logo+.png'] {
-    display: block;
-}
-
-p {
-    text-align: right;
 }
 
 div {
-    background-color: #d09d72;
-    background-color: #d1bead;
+    background-color: var(--terciary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 main {
-    background-color: #d1bead;
+    background-color: var(--primary);
+    padding: 1rem;
+    height: 30rem;
 }
 
-section + article::before {
-    content: '';
-    display: block;
-    border-bottom: 1px solid #5169a7;
+main div {
+    display: flex;
+    flex: 1;
+    background-color: var(--primary);
+    justify-content: space-between;
 }
 
-section > ul {
+main div + article::before {
+    margin-top: 1.5rem;
     content: '';
     display: block;
-    color: blanchedalmond;
-    align-items: left;
-}
-section:nth-child(2n + 1) {
-    text: var(--gris);
+    border-bottom: 1px solid var(--secondary);
 }
 
 article {
+    align-items: right;
     text-align: right;
     font-size: xx-large;
-    height: 30vh;
+    height: 7rem;
 }
 
-.productos {
+/* Selector combinado de elementos*/
+footer div {
     display: flex;
+    background-color: var(--secondary);
 }
 
 /*Selector de atributo*/
